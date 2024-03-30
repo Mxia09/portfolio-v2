@@ -40,6 +40,7 @@ const LogoWrapper = styled.span`
     font-weight: bold;
     height: 45px;
     padding: 20px;
+    padding-bottom:10px;
 `;
 
 const StyledSvg = styled.svg`
