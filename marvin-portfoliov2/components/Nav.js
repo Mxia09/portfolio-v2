@@ -37,8 +37,20 @@ export default function Nav({href}) {
                     <Spacer />
                     <Center>
                         <Stack direction={{ base: 'column', md: 'row' }} spacing='35px'  >
+                        <Link 
+                            href={'/'}
+                            _hover={{
+                                textDecoration: 'none',
+                                bg: useColorModeValue('#88ccca', 'gray.700'),
+                                    }}
+                            px={2}
+                            py={1}
+                            rounded={'md'} 
+                            >
+                                <Text fontWeight="extrabold" fontSize={20}>Home</Text>
+                            </Link>
                             <Link 
-                                href={'/'} 
+                                href={'/about'} 
                                 _hover={{
                                     textDecoration: 'none',
                                     bg: useColorModeValue('#88ccca', 'gray.700'),
