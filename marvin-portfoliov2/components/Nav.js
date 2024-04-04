@@ -16,7 +16,7 @@ const NavLink = ({href, children}) => {
             rounded="md"
             _hover={{
                 textDecoration: 'none',
-                bg: useColorModeValue('#FFFAF0', 'RGBA(0, 0, 0, 0.85)')
+                bg: useColorModeValue('#FFFAF0')
             }}
         >
             {children}
