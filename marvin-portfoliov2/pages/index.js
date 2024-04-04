@@ -6,7 +6,7 @@ import { Container, Box, Text, Heading, Center, Divider, Button, Link, Image} fr
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: theme.colors.secondary }}>
+    // <div style={{ backgroundColor: theme.colors.secondary }}>
       <>
         <Nav />
         <Container >
@@ -15,6 +15,7 @@ export default function Home() {
             textAlign='center'
             mb='4'
             p='3'
+            mt='5'
             >
               <Heading>Marvin Xia</Heading>
               <Text textAlign='center'>Fullstack web developer based in East Bay CA</Text>
@@ -52,6 +53,6 @@ export default function Home() {
         </Container>
         <Footer />
       </>
-    </div>
+    // </div>
   );
 }

@@ -3,7 +3,7 @@ import { Center,Flex, Box, Spacer, Link} from "@chakra-ui/react"
 export default function Footer() {
 return(
     <Flex>
-        <Box fontSize='sm' >
+        <Box fontSize='sm' mt='5'>
             ©2023 Marvin Xia. All Rights Reserved.
         </Box>
     <Spacer />

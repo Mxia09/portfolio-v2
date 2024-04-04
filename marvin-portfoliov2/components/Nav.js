@@ -31,7 +31,7 @@ export default function Nav({href}) {
 
     return(
         <>
-            <Box bg={useColorModeValue('#FFFAF0', 'RGBA(0, 0, 0, 0.85)')} px={4}>
+            <Box bg={useColorModeValue('RGBA(255, 255, 255, 0.04)', 'RGBA(0, 0, 0, 0.48)')} px={4}>
                 <Flex>
                     <Logo/>
                     <Spacer />
