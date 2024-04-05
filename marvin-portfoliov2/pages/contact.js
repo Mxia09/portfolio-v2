@@ -2,17 +2,23 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { Center, Heading, InputLeftElement, Textarea, useTheme } from "@chakra-ui/react";
 import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Flex, Container, Box, Button, useColorModeValue, VStack, InputGroup} from '@chakra-ui/react';
+import { useState } from "react";
 import { BsPerson, BsPhone } from 'react-icons/bs'
 import { MdOutlineMail, MdOutlineEdit  } from "react-icons/md";
+import { useForm, ValidationError } from '@formspree/react';
+
+
 
 
 export default function Contact() {
-    // const theme = useTheme(); 
+    const [state, handleSubmit] = useForm("mgegpwal");
+
 
     return(
         <>
             <Nav/>
             <Container mt='5'>
+            <form onSubmit={handleSubmit}>
                 <Heading textAlign='center' mb='5'>Let's get in touch</Heading>
                     <Box
                         bg={useColorModeValue('white', 'gray.700')}
@@ -70,14 +76,12 @@ export default function Contact() {
                         </FormControl>
 
                     <Center>
-                        <Button colorScheme='cyan' mt='5'>Send Email</Button>
+                        <Button colorScheme='cyan' mt='5' type="submit" disabled={state.submitting}>{state.submitting ? 'Sending...' : 'Send Email'}</Button>
                     </Center>
                     </Box>
+                    </form>
             </Container>
             <Footer />
         </>
     )
 }
-
-
-
