@@ -1,6 +1,6 @@
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
-import { Container, Heading, Box, Text, Button, Center, Link} from "@chakra-ui/react"
+import { Container, Heading, Box, Text, Button, Center, Link, Image} from "@chakra-ui/react"
 
 export default function() {
     return( 
@@ -17,8 +17,9 @@ export default function() {
                     <Heading>Marvin Xia</Heading>
                     <Text textAlign='center'>Fullstack web developer based in East Bay CA</Text>
                 </Box>
-                <Box bg='gray' textAlign='center' >Full-stack web developer/</Box>
-
+                <Center>
+                    <Image alignItems='center' boxSize='300px' src="images/fullshot.png" alt='Marvin' />
+                </Center>
                 <Box mt='5'>
                     <Text mb='4'>
                         Hello, my name is Marvin and I am a passionate full-stack engineer located in the greater San Francisco Bay Area

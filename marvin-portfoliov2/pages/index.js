@@ -23,7 +23,7 @@ export default function Home() {
           <Image
             borderRadius='full'
             boxSize='130px'
-            src='/images/marvin.png'
+            src='images/headshot.png'
           />
           </Center>
           <Divider mt='3'/>
