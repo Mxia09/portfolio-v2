@@ -3,7 +3,6 @@ import Nav from '@/components/Nav';
 import theme from '@/styles/themes';
 import Footer from '@/components/Footer';
 import { Container, Box, Text, Heading, Center, Divider, Button, Link, Image} from '@chakra-ui/react';
-
 export default function Home() {
   return (
     // <div style={{ backgroundColor: theme.colors.secondary }}>

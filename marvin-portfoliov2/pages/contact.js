@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import { Alert, Center, Heading, InputLeftElement, Textarea, useTheme } from "@chakra-ui/react";
 import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Flex, Container, Box, Button, useColorModeValue, VStack, InputGroup} from '@chakra-ui/react';
 import { BsPerson, BsPhone } from 'react-icons/bs'
-import { MdOutlineMail, MdOutlineEdit  } from "react-icons/md";
+import { MdOutlineMail, MdOutlineEdit, MdMarkEmailRead} from "react-icons/md";
 import { useForm, ValidationError } from '@formspree/react';
 import React from "react";
 import { useState, useEffect } from "react";
@@ -29,7 +29,10 @@ export default function Contact() {
             <Nav/>
             <Container mt='5'>
                 {showAlert && (
-                    <Alert status='success' mb='4'>Email Received!</Alert>
+                    <Alert status='success' mb='4'> 
+                    <MdMarkEmailRead /> &nbsp;
+                    Email Received!
+                    </Alert>
                 )}
             <form onSubmit={handleSubmit}>
                 <Heading textAlign='center' mb='5'>Let's get in touch</Heading>
