@@ -12,7 +12,7 @@ return(
         <Center>
             <Box as='a' href="https://www.linkedin.com/in/marvin-xia/" target="_blank" rel="noopener noreferrer">
                 <IconButton
-                    aria-lable='linkedin'
+                    aria-label='linkedin'
                     variant='ghost'
                     size='sm'
                     icon={<BsLinkedin size="20px" />}
@@ -25,7 +25,7 @@ return(
             </Box>
             <Box as='a' href="https://github.com/Mxia09" target="_blank" rel="noopener noreferrer">
                 <IconButton
-                    aria-lable='github'
+                    aria-label='github'
                     variant='ghost'
                     size='sm'
                     icon={<BsGithub size="20px" />}

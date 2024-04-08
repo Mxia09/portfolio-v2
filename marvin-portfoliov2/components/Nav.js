@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
-import { Box, Text, Flex, Spacer, Center, Stack, useColorMode, useColorModeValue, Button} from "@chakra-ui/react";
+import { Box, Text, Flex, Spacer, Center, Stack, useColorMode, useColorModeValue, Button, Switch} from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {Link, LinkProps as ChakraLinkProps} from "@chakra-ui/next-js";
 import {LinkProps as NextLinkProps} from "next/link";

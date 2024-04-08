@@ -1,16 +1,17 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { SimpleGrid, Box, Container, Heading, Card, CardHeader, CardBody, CardFooter, Stack, Divider, ButtonGroup, Button, Image, Text, Center} from "@chakra-ui/react";
+import { BsGithub } from "react-icons/bs";
+import ProjectCard from "@/components/ProjectCardGrid";
 
-
-export default function Contact() {
+export default function Projects() {
     return(
         <>
             <Nav />
                 <Heading textAlign='center' mt='5'mb='10'>Projects</Heading>
                 <Container>
                     <SimpleGrid columns={2} spacingX='40px' spacingY='20px'>
-                        <Box>
+                        {/* <Box>
                             <Card size='sm'>
                                 <CardBody>
                                     <Image
@@ -72,7 +73,7 @@ export default function Contact() {
                                         </Stack>
                                 </CardBody>
                             </Card>
-                        </Box>
+                        </Box> */}
                         <Box >
                         <Card size='sm'>
                                 <CardBody>
@@ -94,7 +95,14 @@ export default function Contact() {
                                 </CardBody>
                             </Card>
                         </Box>
+
+                        <ProjectCard id="AoP" />
                     </SimpleGrid>
+                    <Center>
+                    <Button bg='teal' mt='4'as='a' href="https://github.com/Mxia09" target="_blank" rel="noopener noreferrer">
+                        <BsGithub/> &nbsp; Github Portfolio
+                    </Button>    
+                    </Center>                    
                 </Container>
             <Footer/>
         </>
